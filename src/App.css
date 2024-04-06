@@ -1,0 +1,121 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#heading {
+  font-size: 4rem;
+  text-align: center;
+  margin: 12px;
+}
+.do {
+  color: rgba(72, 72, 255, 0.573);
+  text-decoration: underline;
+}
+
+form {
+  /* border: 1px solid blueviolet; */
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form input {
+  width: 400px;
+  height: 32px;
+  border: 2px solid rgb(141, 86, 252);
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 12px;
+  color: white;
+  background-color: transparent;
+  border-radius: 0.7rem;
+}
+
+input:focus {
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+form button {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 18px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -4px 13px #41465b, 3px 3px 13px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -3px 10px #212121;
+  box-shadow: -1px -4px 13px #41465b, 3px 3px 13px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+/* ----------------------------------------------- */
+
+#todoContainer {
+  border: 1px solid blueviolet;
+  width: 800px;
+  height: fit-content;
+  height: 800px;
+
+
+}
+
+.list {
+  width: 800px;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-item p {
+  width: 600px; /* Set maximum width */
+  word-wrap: break-word;
+}
